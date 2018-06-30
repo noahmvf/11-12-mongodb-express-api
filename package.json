@@ -16,7 +16,7 @@
   },
   "jest": {
     "setupFiles": [
-      "<rootDir>/lib/__test__/env-test.js"
+      "<rootDir>/src/lib/__test__/env.test.js"
     ]
   },
   "keywords": [],
