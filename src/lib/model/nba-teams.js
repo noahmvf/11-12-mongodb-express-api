@@ -10,5 +10,6 @@ const nbaTeamsSchema = mongoose.Schema({
 });
 
 const skipInit = process.env.NODE_ENV === 'development';
+
 export default mongoose.model('nba-teams', nbaTeamsSchema, 'nba-teams', skipInit);
 
