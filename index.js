@@ -7,7 +7,7 @@ if (!process.env.NODE_ENV) {
 if (process.env.NODE_ENV !== 'production') {
   console.log('DEVELOPMENT SETTINGS');
   require('babel-register');
-  require('./lib/main');
+  require('./src/lib/main');
 } else {
   console.log('PRODUCTION SETTINGS');
   require('./build/main'); /*eslint-disable-line*/

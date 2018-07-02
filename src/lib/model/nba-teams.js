@@ -9,5 +9,7 @@ const nbaTeamsSchema = mongoose.Schema({
   championships: { type: Number, required: true }, 
 });
 
-export default mongoose.model('nba-teams', nbaTeamsSchema);
+const skipInit = process.env.NODE_ENV === 'development';
+
+export default mongoose.model('nba-teams', nbaTeamsSchema, 'nba-teams', skipInit);
 
